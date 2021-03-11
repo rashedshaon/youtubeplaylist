@@ -1,0 +1,19 @@
+fields:
+    title:
+        label: itrail.youtubeplaylist::lang.form.block_title
+        span: auto
+        type: text
+    playlist_title:
+        label: itrail.youtubeplaylist::lang.form.play_list_title
+        span: left
+        type: text
+    playlist_subtitle:
+        label: itrail.youtubeplaylist::lang.form.play_list_subtile
+        span: left
+        type: text
+    videos:
+        label: itrail.youtubeplaylist::lang.form.youtube_video_code
+        size: small
+        span: left
+        type: textarea
+        comment: itrail.youtubeplaylist::lang.form.youtube_video_code_comment

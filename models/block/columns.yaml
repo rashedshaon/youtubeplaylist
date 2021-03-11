@@ -1,0 +1,32 @@
+columns:
+    id:
+        label: itrail.youtubeplaylist::lang.column.id
+        type: number
+        invisible: true
+    title:
+        label: itrail.youtubeplaylist::lang.column.title
+        type: text
+        searchable: true
+        sortable: true
+    playlist_title:
+        label: itrail.youtubeplaylist::lang.column.playlist_title
+        type: text
+        searchable: true
+        sortable: true
+    playlist_subtitle:
+        label: itrail.youtubeplaylist::lang.column.playlist_subtitle
+        type: text
+        searchable: true
+        sortable: true
+    videos:
+        label: itrail.youtubeplaylist::lang.column.videos
+        type: text
+        searchable: true
+    created_at:
+        label: itrail.youtubeplaylist::lang.column.created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: itrail.youtubeplaylist::lang.column.updated_at
+        type: datetime
+        invisible: true

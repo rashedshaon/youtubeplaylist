@@ -1,0 +1,34 @@
+{% if block %}
+<div class="youtube-wrapper">
+	<div class="playlist-title">
+		<h4>{{block.title}}</h4>
+	</div>
+	<div id="rypp-play-{{block.id}}" class="RYPP r16-9"
+		data-ids="{{block.videos}}">
+		<div class="RYPP-video">
+			<div class="RYPP-video-player">
+				<!-- Will be replaced -->
+			</div>
+		</div>
+		<div class="RYPP-playlist">
+			<header>
+				<h2 class="_h1 RYPP-title">{{block.playlist_title}}</h2>
+				<p class="RYPP-desc">{{block.playlist_subtitle}}</p>
+			</header>
+			<div class="RYPP-items"></div>
+		</div>
+	</div>
+</div>
+
+{% put scripts %}
+<script>
+	$(document).ready(function(){
+		$('#rypp-play-{{block.id}}').rypp('{{block_api}}', {
+                update_title_desc: true, // Default false
+                autoplay: false, autonext: false, loop: false, mute: false, debug: false
+            });
+	});
+</script>
+{% endput %}
+
+{% endif %}

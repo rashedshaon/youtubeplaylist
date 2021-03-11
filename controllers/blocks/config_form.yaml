@@ -1,0 +1,10 @@
+name: Blocks
+form: $/itrail/youtubeplaylist/models/block/fields.yaml
+modelClass: Itrail\YouTubePlayList\Models\Block
+defaultRedirect: itrail/youtubeplaylist/blocks
+create:
+    redirect: 'itrail/youtubeplaylist/blocks/update/:id'
+    redirectClose: itrail/youtubeplaylist/blocks
+update:
+    redirect: itrail/youtubeplaylist/blocks
+    redirectClose: itrail/youtubeplaylist/blocks

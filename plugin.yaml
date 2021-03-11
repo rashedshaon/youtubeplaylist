@@ -1,0 +1,24 @@
+plugin:
+    name: 'itrail.youtubeplaylist::lang.plugin.name'
+    description: 'itrail.youtubeplaylist::lang.plugin.description'
+    author: 'IT Rail'
+    icon: oc-icon-play
+    homepage: ''
+permissions:
+    itrail.ypl.manage_videos:
+        tab: 'itrail.youtubeplaylist::lang.block.tab'
+        label: 'Manage You Tube Play List'
+navigation:
+    main-menu-item:
+        label: 'itrail.youtubeplaylist::lang.block.name'
+        url: itrail/youtubeplaylist/blocks
+        icon: icon-play
+        permissions:
+            - itrail.ypl.manage_videos
+        sideMenu:
+            side-menu-item:
+                label: 'itrail.youtubeplaylist::lang.block.play_list'
+                url: itrail/youtubeplaylist/blocks
+                icon: icon-list
+                permissions:
+                    - itrail.ypl.manage_videos

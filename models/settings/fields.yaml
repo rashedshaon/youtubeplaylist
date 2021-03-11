@@ -1,0 +1,9 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+  block_api:
+    span: left
+    label: Give your YouTube API
+    type: text
